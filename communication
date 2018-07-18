@@ -1,0 +1,10 @@
+communication problem simulator and driver:
+case 1: unable to register (DEVICE_ASYNC, DEVICE_ASYNC_VERSION, udp).Error: cannot open message queue 
+in this case , we can now know that the message queue resource is exhausted, even if we kill the process which occupy the resource 
+of message queue, However,sometimes, it can not release resource immediately. so when customer encounter this case, reboot is the directly
+solution.
+
+case 2: srq blocked, if ordinary user permission launch tcct and root permission launch simulator, the SRQ sent from simulator will be
+        blocked, the root cause is that, vxii11 server and vxi11 client communcation with each other by meassage queues. data written to
+        the messae queues by root permission, the ordinary permission can read it. so the solution is that launching tcct and simulaor
+        whit the ordinary permission.
