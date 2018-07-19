@@ -1,0 +1,1 @@
+in dviver code, there is a : phFuncTaStart() phFuncTaRecive() phFuncTasend() phFuncTaStop() 搭配使用，可以防止重复的 send/recieve 
