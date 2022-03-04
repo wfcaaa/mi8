@@ -1,0 +1,16 @@
+1. plugin: PlantUML
+
+code:
+@startuml
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+
+Alice -> Bob: Another authentication Request
+Alice <-- Bob: Another authentication Response
+@enduml
+
+name: *.puml
+
+2. Markdown Preview Enhanced
+
+name: *.md
